@@ -265,6 +265,16 @@ permissioned blockchain network. The membership services code that runs in peers
 and orderers both authenticates and authorizes blockchain operations.  It is a
 PKI-based implementation of the Membership Services Provider (MSP) abstraction.
 
+.. _Orderer:
+
+Orderers take the signed proposal response broadcasted by client and use the response to update the ledger. The Orderers also sends the update of block to anchor peers. 
+------
+
+A legally separate entity that owns a unique root certificate for the network.
+Network components such as peer nodes and application clients will be linked to a member.
+
+
+
 .. _Ordering-Service:
 
 Ordering Service
